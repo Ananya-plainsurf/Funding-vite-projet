@@ -1,0 +1,81 @@
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Pagination Content */
+.pagination-content {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Pagination Item */
+.pagination-item {
+  margin: 0 5px;
+}
+
+/* Pagination Link */
+.pagination-link {
+  width: 40px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.pagination-link.default {
+  padding: 10px;
+}
+
+.pagination-link.icon {
+  padding: 8px;
+}
+
+/* Pagination Previous/Next */
+.pagination-prev, .pagination-next {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+}
+
+.pagination-prev:hover, .pagination-next:hover {
+  background-color: #ddd;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+  }
+
+/* Ellipsis for More Pages */
+.pagination-ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.pagination-prev span, .pagination-next span {
+  margin: 0 5px;
+}
+
+.pagination-ellipsis.active{
+    text-decoration: underline;
+    text-decoration-color: #337ab7;
+    text-underline-offset: 5px;
+}
