@@ -1,0 +1,101 @@
+/* modal.module.css */
+
+/* Modal Background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+}
+
+/* Modal Content Container */
+.modalContent {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 28px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animateTop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateTop;
+  animation-duration: 0.4s;
+}
+
+/* Keyframe for Modal Animation */
+@-webkit-keyframes animateTop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateTop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Close Button */
+.closeButton {
+  color: black;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 21px;
+  right: 22px;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Header */
+.header {
+  padding: 29px 16px;
+  background-color: whitesmoke;
+  color: black;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+}
+
+/* Header Text Style */
+.headerText {
+  font-weight: 400;
+  position: absolute;
+  left: 310px;
+}
+
+/* Text style for fields */
+.textStyle {
+  font-weight: 500;
+  color: #666;
+}
+
+/* Modal Body Content */
+.body {
+  padding: 30px 100px;
+  display: grid;
+  gap: 18px;
+}
