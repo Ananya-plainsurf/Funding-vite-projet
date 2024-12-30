@@ -1,0 +1,15 @@
+.flexStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.infoStyle {
+  background: none;
+  padding: 0px;
+}
+
+.tableHeadStyle {
+  background: #e5e7eb;
+}
